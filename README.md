@@ -106,7 +106,20 @@ flowchart TD
 
 ## Screenshots
 
-Screenshots of the running application, successful unit tests and GitHub Actions pipeline will be added to `docs/screenshots/`.
+### 1. FoundIt Application
+The running FoundIt web application.
+
+![FoundIt Website](docs/screenshots/foundit-website.png)
+
+### 2. Successful Unit Tests
+Automated unit tests executed successfully using Maven.
+
+![Unit Tests](docs/screenshots/unit-tests.png)
+
+### 3. GitHub Actions CI/CD Pipeline
+Successful Build, Test, and Deploy stages.
+
+![GitHub Actions Pipeline](docs/screenshots/github-actions.png)
 
 ## Author
 
