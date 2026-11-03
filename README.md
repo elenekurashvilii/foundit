@@ -121,6 +121,21 @@ Successful Build, Test, and Deploy stages.
 
 ![GitHub Actions Pipeline](docs/screenshots/github-actions.png)
 
+
+
+## Bonus Features
+
+### Automatic Rollback
+
+The deployment script includes automatic rollback functionality.
+
+- Deploys a new application release.
+- Checks application health using the `/health` endpoint.
+- If the health check fails, it attempts to restore the previous release.
+- Restarts the previous application version.
+
+Previous releases are preserved to support recovery and reliable deployment.
+
 ## Author
 
 FoundIt — University DevOps Midterm Project.
