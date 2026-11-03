@@ -88,3 +88,26 @@ The health-check script sends an HTTP request to `/health` and records the resul
 
 ## Project Workflow
 
+```mermaid
+flowchart TD
+    A[Developer] --> B[Git push to dev]
+    B --> C[GitHub Actions]
+    C --> D[Build]
+    D --> E[Test]
+    E --> F{Tests pass?}
+    F -->|No| G[Pipeline fails]
+    F -->|Yes| H[Merge into main]
+    H --> I[Deploy]
+    I --> J[Health Check]
+    J --> K{Healthy?}
+    K -->|Yes| L[Deployment successful]
+    K -->|No| M[Rollback]
+```
+
+## Screenshots
+
+Screenshots of the running application, successful unit tests and GitHub Actions pipeline will be added to `docs/screenshots/`.
+
+## Author
+
+FoundIt — University DevOps Midterm Project.
