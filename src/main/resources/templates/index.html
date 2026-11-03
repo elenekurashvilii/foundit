@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoundIt. — Lost something? Find it here.</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header class="navbar">
+
+    <a href="/" class="logo">
+        foundit<span>.</span>
+    </a>
+
+    <nav class="nav-links">
+        <a href="#browse">Browse items</a>
+        <a href="#how-it-works">How it works</a>
+    </nav>
+
+    <a href="#report" class="nav-button">
+        Report an item <span>↗</span>
+    </a>
+
+</header>
+
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                <span class="live-dot"></span>
+                YOUR COMMUNITY LOST & FOUND
+            </div>
+
+            <h1>
+                Lost something?<br>
+                Let's <span>find it.</span>
+            </h1>
+
+            <p class="hero-description">
+                Good things find their way back. Connect with your community
+                and help lost belongings find their owners.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#browse" class="primary-button">
+                    Find an item <span>↗</span>
+                </a>
+
+                <a href="#report" class="secondary-button">
+                    I found something
+                </a>
+
+            </div>
+
+            <div class="hero-note">
+                <span>✳</span>
+                A little kindness goes a long way.
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="visual-circle circle-one"></div>
+            <div class="visual-circle circle-two"></div>
+
+            <div class="floating-card card-top">
+
+                <span class="mini-icon">🎧</span>
+
+                <div>
+                    <strong>Wireless headphones</strong>
+                    <small>University library</small>
+                </div>
+
+                <span class="status lost">LOST</span>
+
+            </div>
+
+
+            <div class="hero-illustration">
+
+                <div class="illustration-sun"></div>
+
+                <div class="illustration-bag">
+                    ✦
+                </div>
+
+                <div class="illustration-caption">
+                    Every item has a way home.
+                </div>
+
+            </div>
+
+
+            <div class="floating-card card-bottom">
+
+                <span class="mini-icon">👜</span>
+
+                <div>
+                    <strong>Brown leather bag</strong>
+                    <small>City center</small>
+                </div>
+
+                <span class="status found">FOUND</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BROWSE ITEMS -->
+    <section class="browse-section" id="browse">
+
+        <div class="section-heading">
+
+            <div>
+
+                <div class="eyebrow">
+                    THE COMMUNITY BOARD
+                </div>
+
+                <h2>
+                    Things looking for <span>their people.</span>
+                </h2>
+
+                <p>
+                    Browse recent lost and found belongings.
+                </p>
+
+            </div>
+
+            <div class="item-counter">
+                <strong id="item-count">0</strong>
+                items listed
+            </div>
+
+        </div>
+
+
+        <!-- SEARCH AND FILTERS -->
+        <div class="browse-toolbar">
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Search by item or location..."
+                >
+
+            </div>
+
+
+            <div class="filter-buttons">
+
+                <button
+                    class="filter-button active"
+                    data-filter="ALL"
+                    type="button">
+                    All items
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-filter="LOST"
+                    type="button">
+                    Lost
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-filter="FOUND"
+                    type="button">
+                    Found
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ITEMS FROM JAVA BACKEND APPEAR HERE -->
+        <div class="items-grid" id="items-grid">
+
+            <div class="loading-message">
+                Finding your items...
+            </div>
+
+        </div>
+
+
+        <!-- EMPTY STATE -->
+        <div class="empty-state hidden" id="empty-state">
+
+            <span>✳</span>
+
+            <h3>No items found</h3>
+
+            <p>
+                Try another search or change the filter.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+    <section class="how-section" id="how-it-works">
+
+        <div class="eyebrow">
+            SIMPLE AS THAT
+        </div>
+
+        <h2>
+            Small steps. <span>Big relief.</span>
+        </h2>
+
+
+        <div class="steps-grid">
+
+            <div class="step-card">
+
+                <div class="step-number">01</div>
+
+                <div class="step-icon">🔎</div>
+
+                <h3>Search around</h3>
+
+                <p>
+                    Look through recent listings to see if someone
+                    has found your belongings.
+                </p>
+
+            </div>
+
+
+            <div class="step-card">
+
+                <div class="step-number">02</div>
+
+                <div class="step-icon">📍</div>
+
+                <h3>Share the details</h3>
+
+                <p>
+                    Found something? Add its description and location
+                    to help its owner.
+                </p>
+
+            </div>
+
+
+            <div class="step-card">
+
+                <div class="step-number">03</div>
+
+                <div class="step-icon">💛</div>
+
+                <h3>Make the connection</h3>
+
+                <p>
+                    Help an item find its way back home.
+                    Every little action matters.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REPORT ITEM -->
+    <section class="report-section" id="report">
+
+        <div class="report-intro">
+
+            <div class="eyebrow">
+                BE PART OF THE GOOD
+            </div>
+
+            <h2>
+                Found something?<br>
+                <span>Lost something?</span>
+            </h2>
+
+            <p>
+                Every listing brings someone one step closer
+                to finding what they're looking for.
+            </p>
+
+            <div class="report-decoration">
+                foundit<span>.</span>
+            </div>
+
+        </div>
+
+
+        <form id="report-form" class="report-form">
+
+            <h3>Share an item</h3>
+
+            <p class="form-subtitle">
+                Fill in a few details to create a listing.
+            </p>
+
+
+            <label for="item-name">
+                Item name
+            </label>
+
+            <input
+                id="item-name"
+                name="name"
+                type="text"
+                placeholder="e.g. Black headphones"
+                required
+            >
+
+
+            <label for="item-description">
+                Description
+            </label>
+
+            <textarea
+                id="item-description"
+                name="description"
+                placeholder="Describe the item..."
+                rows="3"
+            ></textarea>
+
+
+            <label for="item-location">
+                Location
+            </label>
+
+            <input
+                id="item-location"
+                name="location"
+                type="text"
+                placeholder="Where was it lost or found?"
+                required
+            >
+
+
+            <label for="item-type">
+                Listing type
+            </label>
+
+            <select
+                id="item-type"
+                name="type"
+                required
+            >
+
+                <option value="LOST">
+                    I lost something
+                </option>
+
+                <option value="FOUND">
+                    I found something
+                </option>
+
+            </select>
+
+
+            <button
+                type="submit"
+                class="primary-button submit-button">
+                Publish listing <span>↗</span>
+            </button>
+
+
+            <p
+                id="form-message"
+                class="form-message">
+            </p>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <a href="/" class="logo">
+        foundit<span>.</span>
+    </a>
+
+    <p>
+        Bringing lost things back to the right people.
+    </p>
+
+    <span>
+        © 2026 FoundIt. Made with care.
+    </span>
+
+</footer>
+
+
+<!-- IMPORTANT: CONNECT JAVASCRIPT -->
+<script src="/js/app.js"></script>
+
+</body>
+</html>
